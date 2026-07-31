@@ -19,7 +19,8 @@ final class AppModel: ObservableObject {
         self.logger = logger
         automationEnabled = preferences.automationEnabled
 
-        logger.info("CouchMode started; automation is \(self.automationEnabled ? "enabled" : "disabled")")
+        let automationStatus = automationEnabled ? "enabled" : "disabled"
+        logger.info("CouchMode started; automation is \(automationStatus, privacy: .public)")
     }
 
     var statusText: String {
@@ -31,6 +32,7 @@ final class AppModel: ObservableObject {
 
         automationEnabled = enabled
         preferences.automationEnabled = enabled
-        logger.info("Automation changed to \(enabled ? "enabled" : "disabled")")
+        let automationStatus = enabled ? "enabled" : "disabled"
+        logger.info("Automation changed to \(automationStatus, privacy: .public)")
     }
 }
