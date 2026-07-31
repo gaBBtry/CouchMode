@@ -11,4 +11,11 @@
 - `displayplacer` is a possible free, MIT-licensed alternative for a later release. Do not add a second display backend to the MVP unless the project requirements change.
 - Query supported modes and command results instead of assuming that 4K, 120 Hz, HDR, or a particular identifier is available on every Mac, cable, adapter, or TV.
 
+## Pull requests
+
+- When a pull request fully implements a GitHub issue, include `Closes #<issue-number>` in the pull request description.
+- Use a closing keyword only after verifying that all acceptance criteria are met.
+- For partial work, reference the issue without a closing keyword.
+- Never guess the issue number; derive it from the task or GitHub context.
+
 GitHub issues remain the source of truth for product scope and acceptance criteria. This file records durable implementation constraints for coding agents.
