@@ -13,9 +13,12 @@
 
 ## Pull requests
 
-- When a pull request fully implements a GitHub issue, include `Closes #<issue-number>` in the pull request description.
-- Use a closing keyword only after verifying that all acceptance criteria are met.
-- For partial work, reference the issue without a closing keyword.
 - Never guess the issue number; derive it from the task or GitHub context.
+- At the end of every implementation task, tell the user exactly what they need to do and/or verify before a pull request is created.
+- Focus that handoff on practical checks the agent cannot complete alone, such as physical hardware behavior, visual or interaction quality, permissions, external applications, real accounts, cables, displays, audio devices, and other environment-specific behavior.
+- Provide concrete verification steps, the expected observable results, and any failure signs the user should report back.
+- Clearly distinguish checks that are required before the pull request from optional follow-up validation.
+- If no user-only verification remains, say explicitly that no manual check is required before the pull request.
+- When a required manual check remains, wait for the user to confirm its result before creating the pull request.
 
 GitHub issues remain the source of truth for product scope and acceptance criteria. This file records durable implementation constraints for coding agents.
