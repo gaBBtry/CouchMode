@@ -10,6 +10,16 @@ struct DisplaySummary: Equatable, Sendable {
     let isBuiltIn: Bool
 }
 
+enum DisplayConnectionState: Equatable, Sendable {
+    case connected
+    case disconnected
+}
+
+struct DisplayConnectionEvent: Equatable, Sendable {
+    let state: DisplayConnectionState
+    let display: DisplaySummary
+}
+
 struct AudioOutputSummary: Equatable, Sendable {
     let identifier: String
     let name: String

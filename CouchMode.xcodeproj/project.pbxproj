@@ -18,6 +18,8 @@
 		A10000000000000000000009 /* AppModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000009 /* AppModelTests.swift */; };
 		A1000000000000000000000A /* UserDefaultsAutomationPreferencesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000A /* UserDefaultsAutomationPreferencesTests.swift */; };
 		A1000000000000000000000B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000D /* XCTest.framework */; };
+		A1000000000000000000000C /* DisplayWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000E /* DisplayWatcher.swift */; };
+		A1000000000000000000000D /* DisplayWatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000F /* DisplayWatcherTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		A2000000000000000000000B /* CouchMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CouchMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2000000000000000000000C /* CouchModeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CouchModeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2000000000000000000000D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = System/Library/Frameworks/XCTest.framework; sourceTree = SDKROOT; };
+		A2000000000000000000000E /* DisplayWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayWatcher.swift; sourceTree = "<group>"; };
+		A2000000000000000000000F /* DisplayWatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayWatcherTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				A20000000000000000000005 /* DisplayConfiguring.swift */,
+				A2000000000000000000000E /* DisplayWatcher.swift */,
 			);
 			path = Display;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				A20000000000000000000009 /* AppModelTests.swift */,
+				A2000000000000000000000F /* DisplayWatcherTests.swift */,
 				A2000000000000000000000A /* UserDefaultsAutomationPreferencesTests.swift */,
 			);
 			path = CouchModeTests;
@@ -275,6 +281,7 @@
 				A10000000000000000000003 /* AutomationPreferences.swift in Sources */,
 				A10000000000000000000001 /* CouchModeApp.swift in Sources */,
 				A10000000000000000000005 /* DisplayConfiguring.swift in Sources */,
+				A1000000000000000000000C /* DisplayWatcher.swift in Sources */,
 				A10000000000000000000008 /* MenuBarContentView.swift in Sources */,
 				A10000000000000000000004 /* ServiceModels.swift in Sources */,
 				A10000000000000000000007 /* SteamLaunching.swift in Sources */,
@@ -286,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10000000000000000000009 /* AppModelTests.swift in Sources */,
+				A1000000000000000000000D /* DisplayWatcherTests.swift in Sources */,
 				A1000000000000000000000A /* UserDefaultsAutomationPreferencesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
