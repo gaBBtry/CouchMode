@@ -175,7 +175,7 @@ final class CoreGraphicsDisplayProvider: DisplayProviding {
     }
 
     private func identifier(for displayID: CGDirectDisplayID) -> DisplayIdentifier {
-        guard let unmanagedUUID = CGDisplayCreateUUIDFromDisplayID(displayID) else {
+        guard let unmanagedUUID = ColorSync.CGDisplayCreateUUIDFromDisplayID(displayID) else {
             return DisplayIdentifier(rawValue: "coregraphics-\(displayID)")
         }
 
